@@ -1,0 +1,26 @@
+#color-pallete {
+    color: #253C78;
+    color: #102B3F;
+    color: #759AAB;
+    color: #FAA916;
+    color: #FFFBFA;
+}
+
+body {
+    background-color: #102B3F;
+    color: #FFFBFA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #759AAB;
+}
+
+#profile-picture {
+    border-radius: 100%;
+}
+
+#my-name {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
