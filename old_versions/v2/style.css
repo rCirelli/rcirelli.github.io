@@ -1,0 +1,57 @@
+#color-pallete {
+    color: #253C78;
+    color: #102B3F;
+    color: #759AAB;
+    color: #FAA916;
+    color: #FFFBFA;
+}
+
+body {
+    background-color: #102B3F;
+    color: #FFFBFA;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 23px;
+}
+
+a {
+    color: #759AAB;
+}
+
+#profile-picture {
+    border-radius: 100%;
+}
+
+#my-name {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.emphasis {
+    font-weight: 500;
+    color: #FAA916;    
+}
+
+.emphasis1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.emphasis2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.emphasis3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.emphasis4 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.emphasis5 {
+    font-size: 10px;
+    padding: 10px;
+}
