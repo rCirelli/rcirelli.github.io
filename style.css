@@ -38,10 +38,12 @@ p strong {
 }
 
 .divider {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border: 2px solid #65ffdc;    
+    border-top: 2px solid #65ffdc;    
+    border-bottom:2px solid #65ffdc;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
 }
 
 #header {
@@ -96,12 +98,25 @@ p strong {
     padding-left: 3px;
 }
 
-#skills {
+#wrapper {
     background-color: #e7e7e7;
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0 -73px;
-    padding: 30px 73px;
+    /* position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw; */
+    margin-bottom: -16px;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+#skills {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
 }
 
 #skills h2 {
