@@ -11,14 +11,34 @@ body {
     color: #FFFBFA;
     font-family: 'Montserrat', sans-serif;
     line-height: 23px;
+    padding:20px 50px;
 }
 
 a {
     color: #759AAB;
 }
 
+#header {
+    text-align: center;    
+}
+
 #profile-picture {
     border-radius: 100%;
+    float: left;
+}
+
+#info {
+    display: inline-block;    
+    padding: 35px 50px;
+}
+
+#info h2 {
+    font-size: 40px;
+}
+
+#description {
+    padding: 10px 10px;
+    text-align: justify;
 }
 
 #my-name {
