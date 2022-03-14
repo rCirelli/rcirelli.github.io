@@ -4,10 +4,10 @@
   color: #759aab;
   color: #faa916;
   color: #fffbfa;
-  color: rgb(10, 24, 46);    /*background*/
-  color: rgb(204, 213, 245); /*text title*/
-  color: rgb(136, 145, 175); /*text*/
-  color: rgb(101, 255, 220); /*accent*/
+  color: #0a182e; /*background*/
+  color: #ccd5f5; /*text title*/
+  color: #8891af; /*text*/
+  color: #65ffdc; /*accent*/
 }
 
 body {
@@ -55,33 +55,8 @@ p strong {
     left: 50%;
 }
 
-.header {
-    padding-left: 5%;
-    background-color: rgba(37, 61, 120, 0.89);   
-    position: fixed; 
-    z-index: 999;
-    width: 100vw;
-    left: 0;
-    top: 0;
-}
-
-.header a {
-    text-decoration: none;
-    font-weight: 600;
-    color: rgb(136, 145, 175);
-}
-
-.header a:hover {
-    color: rgb(101, 255, 220);
-}
-
-.nav ul li {
-    display: inline-block;
-    margin: auto 30px;
-}
-
-#profile {
-    padding-top: 80px;
+#header {
+    padding-top: 30px;
     text-align: left;
 }
 
