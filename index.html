@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <title>Raphael Cirelli - WebDev</title>
-  </head>
-  <body>
-    <div id="header">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Raphael Cirelli - WebDev</title>
+</head>
+<body>
+  <main class="main-wrapper">
+
+    <header class="header">      
+    </header>
+
+    <div class="info">
+      
       <div id="profile-picture">
         <img
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQE-se5Bggs47A/profile-displayphoto-shrink_800_800/0/1622463242013?e=1651104000&v=beta&t=sbB0YDGcErQC2cvsfLlVKGVtlZjqo_coSAG78Yqrmg8"
-          alt="foto de perfil com fundo e bordas azuis"
-          width="200px"
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQE-se5Bggs47A/profile-displayphoto-shrink_800_800/0/1622463242013?e=1651104000&v=beta&t=sbB0YDGcErQC2cvsfLlVKGVtlZjqo_coSAG78Yqrmg8"
+        alt="foto de perfil com fundo e bordas azuis"
+        width="200px"
         />
       </div>
-      <div id="info">
+
+      <div id="greetings">
         <h3>Olá, meu nome é</h3>
         <h1 id="my-name">Raphael Cirelli</h1>
-        <ul class="accent">
+        <ul id="info-list" class="accent">
           <li>Nacionalidade: Brasileiro</li>
+          <li>Estado Civil: Casado</li>
           <li>Localização: São Bernardo do Campo / SP</li>
         </ul>
       </div>
-      <div id="description">
+      <hr class="line-divider">
+      <div class="description">
         <p>
-          Me chamo Raphael Cirelli,
-          <strong>atualmente estudo desenvolvimento web fullstack na</strong> <img id="trybe-logo" src="https://assets-global.website-files.com/61549abf6fb9ca5e91bc5709/61549abf6fb9ca4630bc5747_Logo.svg" alt="Trybe">
+          <strong>Atualmente estudo desenvolvimento web fullstack na</strong> <img id="trybe-logo" src="https://assets-global.website-files.com/61549abf6fb9ca5e91bc5709/61549abf6fb9ca4630bc5747_Logo.svg" alt="Trybe">.
           <br />
           Ja tive contato com programação antes. Em 2010 fiz um curso técnico de
           informática, em conjunto com o ensino médio. Lá conheci a programação
@@ -49,35 +59,25 @@
         </p>
       </div>
     </div>
-    <div class="divider"></div>
-    <div id="wrapper">
-      <div id="skills">
-        <h2>Algumas skills que aprenderei durante o curso:</h2>
-        <ul>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /></li>
-          <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /></li>
-        </ul>        
+    <div class="tech-list">
+      <hr class="line-divider full-width">
+      <div id="wrapper">
+        <div id="skills">
+          <h2>Algumas skills que aprenderei durante o curso:</h2>
+          <ul>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /></li>
+            <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /></li>
+          </ul>        
+        </div>
       </div>
-    </div>
-    <div class="divider"></div>
-    <br>
-    <div id="feedback">
-      <h2>Por favor, deixe seu feedback!</h2>
-      <p>Essa página foi criada com somente 2 semanas de curso, e usei tudo que aprendi até agora na Trybe. E ao longo do curso, irei atualizá-la e melhorá-la aplicando o que eu aprender.
-        <br>
-        Criei um <a href="https://www.linkedin.com/posts/raphael-cirelli_raphael-cirelli-activity-6903950511025053696-Hvf5" target="_blank">post</a> no LinkedIn falando sobre isso.
-        <br>
-        Se puder, deixe um comentario lá dizendo o que achou, e como posso melhorar!</p>
-        <br>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6903950510144241664" height="534" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
-        <br>
+      <hr class="line-divider full-width">
     </div>
     <div id="social">
       <h2>Vamos nos conectar!</h2>
@@ -94,13 +94,15 @@
         </li>
       </ul>
     </div>
-    <br />
-    <hr>
-    <p>
-      <br>
-      Feito com HTML e CSS por Raphael Cirelli Garrido
-      <br>
-      Icones usados: <a href="https://devicon.dev/" target="_blank">devicon.dev</a>
-    </p>
-  </body>
+    <footer class="footer">
+      <hr class="line-divider">
+      <p>
+        <br>
+        Feito com HTML e CSS por Raphael Cirelli Garrido
+        <br>
+        Icones usados: <a href="https://devicon.dev/" target="_blank">devicon.dev</a>
+      </p>
+    </footer>
+  </main>
+</body>
 </html>
