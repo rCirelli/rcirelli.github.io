@@ -1,20 +1,15 @@
-import About from './components/About';
-import BasicInfo from './components/BasicInfo';
-import ProfilePicture from './components/ProfilePicture';
+import { Route, Routes } from 'react-router-dom';
 import './index.css';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
-    <main className="bg-slate-900 text-slate-300 w-screen h-screen p-10">
-      <div className="flex justify-around mb-10">
-        <ProfilePicture
-          src={'/assets/profile-picture.jpeg'}
-          alt={'Raphael Cirelli'}
-          isOpenToWork={true}
-        />
-        <BasicInfo />
-      </div>
-      <About />
+    <main className="bg-slate-900 text-slate-300 w-screen h-screen">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </main>
   );
 }
