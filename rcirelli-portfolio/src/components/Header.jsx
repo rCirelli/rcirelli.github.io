@@ -1,5 +1,7 @@
 import { FormControlLabel, Switch } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { connect } from 'react-redux';
 import { sendPersonalData } from '../redux/actions';
 
@@ -55,27 +57,50 @@ const IOSSwitch = styled((props) => (
 }));
 
 function Header({ dispatch, language }) {
+  const [navbar, setNavbar] = useState(false);
+
+  const scrollInitial =
+    'flex justify-end px-10 py-4 sticky top-0 z-50 transition-all duration-300 ease-in-out';
+
+  const scrollBg = `flex justify-end px-10 py-4 sticky top-0 z-50 
+  transition duration-500 ease-in-out
+  outline outline-sky-500/60 outline-bottom outline-1 backdrop-blur-sm bg-sky-600/20
+  bg-gradient-to-r from-sky-600/40`;
+
+  useEffect(() => {
+    const headerObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        setNavbar(!entry.isIntersecting);
+        console.log(entry);
+      });
+    });
+    const profilePictureElement = document.getElementById('profile-div');
+    headerObserver.observe(profilePictureElement);
+  }, [navbar]);
+
   const onChangeHandler = () => {
     const newLang = language === 'en' ? 'pt-br' : 'en';
     dispatch(sendPersonalData(newLang));
   };
 
   return (
-    <header className="flex justify-between px-10 py-4">
-      <FormControlLabel
-        control={
-          <FormControlLabel
-            control={<IOSSwitch sx={{ m: 1 }} />}
-            label="🇺🇸"
-            labelPlacement="start"
-            sx={{ mr: 0 }}
-            value={language}
-            onChange={onChangeHandler}
-          />
-        }
-        label="🇧🇷"
-        labelPlacement="end"
-      />
+    <header className={navbar ? scrollBg : scrollInitial} id="header">
+      <div>
+        <FormControlLabel
+          control={
+            <FormControlLabel
+              control={<IOSSwitch sx={{ m: 1 }} />}
+              label="🇺🇸"
+              labelPlacement="start"
+              sx={{ mr: 0 }}
+              value={language}
+              onChange={onChangeHandler}
+            />
+          }
+          label="🇧🇷"
+          labelPlacement="end"
+        />
+      </div>
     </header>
   );
 }

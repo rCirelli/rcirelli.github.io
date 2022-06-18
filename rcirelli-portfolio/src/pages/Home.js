@@ -6,6 +6,7 @@ import ProfilePicture from '../components/ProfilePicture';
 function Home() {
   return (
     <>
+      <div id="profile-div" />
       <section className="p-10">
         <div className="flex justify-around mb-10">
           <ProfilePicture
@@ -18,6 +19,15 @@ function Home() {
         <About />
       </section>
       <section className="bg-slate-300 text-slate-700 p-10">
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
+        <Hero heading={'Skills:'}>TESTE</Hero>
         <Hero heading={'Skills:'}>TESTE</Hero>
       </section>
     </>
