@@ -71,7 +71,6 @@ function Header({ dispatch, language }) {
     const headerObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         setNavbar(!entry.isIntersecting);
-        console.log(entry);
       });
     });
     const profilePictureElement = document.getElementById('profile-div');

@@ -10,7 +10,7 @@ function About() {
           I graduated in Game Design at Anhembi Morumbi University - UAM.
           Working for +5 years as an IT Analyst, I wanted a career change. And
           at the beginning of 2022, I decided to start a Web Development course
-          at Trybe, which is one of the most recognized programming schools in
+          at Trybe, which is one of the most renowned programming schools in
           Brazil.
         </Translate>
       </p>
