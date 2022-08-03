@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import About from '../components/About';
 import BasicInfo from '../components/BasicInfo';
+import DevIcons from '../components/DevIcons';
 import Hero from '../components/Hero';
 import ProfilePicture from '../components/ProfilePicture';
 import Wrapper from '../components/Wrapper';
@@ -12,12 +13,15 @@ function Home() {
     setEndpoint('https://api.github.com/users/rcirelli');
   }, [setEndpoint]);
 
+  const skills = ['bash', 'html', 'css', 'js', 'git', 'github', 'react', 'tailwind'];
+  const learningSkills = ['docker', 'node', 'mysql', 'ts', 'express'];
+
   return (
     <>
       <div id="profile-div" />
       <Wrapper column>
-        <section className="p-10 w-7/12">
-          <div className="flex justify-around mb-10">
+        <section className="py-10 w-5/12">
+          <div className="flex justify-between mb-10">
             <ProfilePicture
               src={gitHubInfo?.avatar_url || '/assets/profile-picture.jpeg'}
               alt={'Raphael Cirelli'}
@@ -28,7 +32,28 @@ function Home() {
           <About />
         </section>
       </Wrapper>
-      <Hero heading={'Skills:'}>TESTE</Hero>
+      <Hero>
+        <div className="w-5/12 mx-auto">
+          <h1 className="mb-5 text-2xl text-slate-900 font-bold">Skills:</h1>
+          <ul class="w-full grid grid-rows-2 grid-cols-5 gap-x-10 gap-y-5 mb-16">
+            {skills.map((skill, i, arr) => (
+              <li className="flex justify-center">
+                <DevIcons key={skill} iconName={skill} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="w-5/12 mx-auto">
+          <h1 className="mb-5 text-2xl text-slate-900 font-bold">Currently Learning:</h1>
+          <ul class="w-full grid grid-rows-1 grid-cols-5 gap-x-10 gap-y-5">
+            {learningSkills.map((skill, i, arr) => (
+              <li className="flex justify-center">
+                <DevIcons key={skill} iconName={skill} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Hero>
     </>
   );
 }

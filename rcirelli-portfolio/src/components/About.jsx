@@ -2,8 +2,8 @@ import Translate from './Translate';
 
 function About() {
   return (
-    <div className="flex justify-center">
-      <p className="w-11/12 text-slate-400 text-justify">
+    <div className="w-full flex justify-center py-3">
+      <p className="w-full text-slate-400 text-justify leading-relaxed tracking-wider">
         <Translate>
           I've always been passionate about technology. My first contact with
           programming was in 2010 in a technical course at high school. In 2016
