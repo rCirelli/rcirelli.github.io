@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import About from '../components/About';
 import BasicInfo from '../components/BasicInfo';
 import DevIcons from '../components/DevIcons';
+import OpenFileBtn from '../components/OpenFileBtn';
 import Hero from '../components/Hero';
 import ProfilePicture from '../components/ProfilePicture';
 import Wrapper from '../components/Wrapper';
@@ -14,7 +15,7 @@ function Home() {
   }, [setEndpoint]);
 
   const skills = ['bash', 'html', 'css', 'js', 'git', 'github', 'react', 'tailwind'];
-  const learningSkills = ['docker', 'node', 'mysql', 'ts', 'express'];
+  const learningSkills = ['docker', 'node', 'mysql', 'ts', 'express', 'next'];
 
   return (
     <>
@@ -35,7 +36,7 @@ function Home() {
       <Hero>
         <div className="w-5/12 mx-auto">
           <h1 className="mb-5 text-2xl text-slate-900 font-bold">Skills:</h1>
-          <ul class="w-full grid grid-rows-2 grid-cols-5 gap-x-10 gap-y-5 mb-16">
+          <ul class="w-full grid grid-rows-2 grid-cols-5 gap-x-5 gap-y-5 mb-16">
             {skills.map((skill, i, arr) => (
               <li className="flex justify-center">
                 <DevIcons key={skill} iconName={skill} />
@@ -45,7 +46,7 @@ function Home() {
         </div>
         <div className="w-5/12 mx-auto">
           <h1 className="mb-5 text-2xl text-slate-900 font-bold">Currently Learning:</h1>
-          <ul class="w-full grid grid-rows-1 grid-cols-5 gap-x-10 gap-y-5">
+          <ul class="w-full grid grid-rows-1 grid-cols-5 gap-x-5 gap-y-5">
             {learningSkills.map((skill, i, arr) => (
               <li className="flex justify-center">
                 <DevIcons key={skill} iconName={skill} />
@@ -54,6 +55,11 @@ function Home() {
           </ul>
         </div>
       </Hero>
+      <Wrapper>
+        <section className="py-10 w-5/12">
+          <OpenFileBtn file="/assets/Resume-Raphael_Cirelli_Garrido.pdf" />
+        </section>
+      </Wrapper>
     </>
   );
 }

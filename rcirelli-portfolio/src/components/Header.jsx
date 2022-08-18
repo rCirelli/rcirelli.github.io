@@ -60,9 +60,9 @@ function Header({ dispatch, language }) {
   const [navbar, setNavbar] = useState(false);
 
   const scrollInitial =
-    'flex justify-end px-10 py-4 sticky top-0 z-50 transition-all duration-300 ease-in-out';
+    'w-100 flex justify-end px-10 py-4 sticky top-0 z-50 transition-all duration-300 ease-in-out';
 
-  const scrollBg = `flex justify-end px-10 py-4 sticky top-0 z-50 
+  const scrollBg = `w-100 flex justify-end px-10 py-4 sticky top-0 z-50
   transition duration-500 ease-in-out
   outline outline-sky-500/60 outline-bottom outline-1 backdrop-blur-sm bg-sky-600/20
   bg-gradient-to-r from-sky-600/40`;
