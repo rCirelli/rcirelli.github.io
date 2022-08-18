@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import { sendPersonalData } from '../redux/actions';
+import OpenFileBtn from './OpenFileBtn';
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -65,7 +66,7 @@ function Header({ dispatch, language }) {
   const scrollBg = `w-100 flex justify-end px-10 py-4 sticky top-0 z-50
   transition duration-500 ease-in-out
   outline outline-sky-500/60 outline-bottom outline-1 backdrop-blur-sm bg-sky-600/20
-  bg-gradient-to-r from-sky-600/40`;
+  bg-gradient-to-r from-sky-600/70`;
 
   useEffect(() => {
     const headerObserver = new IntersectionObserver((entries) => {
@@ -83,7 +84,8 @@ function Header({ dispatch, language }) {
   };
 
   return (
-    <header className={navbar ? scrollBg : scrollInitial} id="header">
+    <header className={`${navbar ? scrollBg : scrollInitial} flex justify-between`} id="header">
+      <OpenFileBtn file="/assets/Resume-Raphael_Cirelli_Garrido.pdf" />
       <div>
         <FormControlLabel
           control={
